@@ -57,13 +57,13 @@ var behaviorPlugin = game.plugins.add(Phaser.Plugin.Behavior)
 behaviorPlugin.enable(myObject)
 
 // add a behavior
-myObject.behaviors.add('my_awesome_key', // a behavior instance key/identifier
-  sampleBehavior, // the behavior instance key/identifier
-  { key: 'value' } // configuration
+myObject.behaviors.add('my awesome key', // a behavior instance key/identifier
+  sampleBehavior, // the behavior
+  { key: 'value' } // options/state (default = null)
 )
 
 // remove a behavior
-myObject.behaviors.remove('my_awesome_key')
+myObject.behaviors.remove('my awesome key')
 
 // add others behaviors... be criative!
 myObject.behaviors.add('fire ball', behaviorSpell, { damage: 300 })
