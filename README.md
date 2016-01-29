@@ -71,4 +71,4 @@ myObject.behaviors.add('frost nova', behaviorSpell, { damage: 100, slow: 0.4 })
 myObject.behaviors.add('invulnerability', behaviorImortal, { duration: 150 })
 ```
 
-### [DEMO](http://codepen.io/luizbills/full/MKGLqZ/)
+### [DEMO](http://codepen.io/luizbills/pen/MKGLqZ?editors=0010)
