@@ -4,6 +4,7 @@
   "description": "Behavior System for Phaser games",
   "author": "Luiz Bills",
   "license": "MIT",
+  "main": "lib/index.js",
   "scripts": {
     "start": "watchify lib/index.js -o build/phaser-plugin-behavior.js -t [ babelify --presets [ es2015 ] ]",
     "minify": "uglifyjs build/phaser-plugin-behavior.js -o build/phaser-plugin-behavior.min.js -c -m"
