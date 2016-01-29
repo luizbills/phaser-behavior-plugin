@@ -1,6 +1,6 @@
 # Behavior
 
-A [Phaser](http://phaser.io) Plugin based on behaviors of Construct2.
+A [Phaser](http://phaser.io) Plugin inspired by Construct2 behaviors.
 
 ## Install
 
