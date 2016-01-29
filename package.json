@@ -1,0 +1,29 @@
+{
+  "name": "phaser-plugin-behavior",
+  "version": "0.1.0",
+  "description": "Behavior System for Phaser games",
+  "author": "Luiz Bills",
+  "license": "MIT",
+  "scripts": {
+    "start": "watchify lib/index.js -o build/phaser-plugin-behavior.js -t [ babelify --presets [ es2015 ] ]",
+    "minify": "uglifyjs build/phaser-plugin-behavior.js -o build/phaser-plugin-behavior.min.js -c -m"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "6.3.13",
+    "babelify": "7.2.0",
+    "uglify-js": "2.6.1",
+    "watchify": "3.7.0"
+  },
+  "dependencies": {
+    "core-js": "2.0.3"
+  },
+  "keywords": [
+    "behavior",
+    "phaser",
+    "game",
+    "modular",
+    "system",
+    "component",
+    "entity"
+  ]
+}
