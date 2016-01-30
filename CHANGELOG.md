@@ -1,4 +1,4 @@
-# CHANGE LOG
+# PATCH NOTES
 
 ## v0.1.1 - 01/28/2016
 
