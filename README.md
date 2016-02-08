@@ -1,6 +1,9 @@
 # Behavior
 
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+
 A [Phaser](http://phaser.io) Plugin inspired by Construct2 behaviors.
+### [DEMO](http://codepen.io/luizbills/pen/MKGLqZ?editors=0010)
 
 ## Install
 
@@ -70,5 +73,3 @@ myObject.behaviors.add('fire ball', behaviorSpell, { damage: 300 })
 myObject.behaviors.add('frost nova', behaviorSpell, { damage: 100, slow: 0.4 })
 myObject.behaviors.add('invulnerability', behaviorImortal, { duration: 15 })
 ```
-
-### [DEMO](http://codepen.io/luizbills/pen/MKGLqZ?editors=0010)
