@@ -49,7 +49,7 @@ var sampleBehavior = {
   },
   
   postRender: function(object, options, game) {
-    // alled after the Game Renderer and State.render have run
+    // called after the Game Renderer and State.render have run
   }
 }
 
