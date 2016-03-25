@@ -36,6 +36,7 @@ var BehaviorManager = function () {
 
   // add :: (key: String, behavior: Object, opts = null: Object)
 
+
   _createClass(BehaviorManager, [{
     key: 'add',
     value: function add(key, behavior) {
@@ -49,6 +50,8 @@ var BehaviorManager = function () {
         behavior: behavior,
         opts: assign({}, behavior.opts, opts)
       };
+
+      behavior.options = behavior.opts;
 
       if (behavior.create) behavior.create.call(null, this.gameObject, ref.opts, this.plugin.game);
     }
@@ -105,6 +108,7 @@ var BehaviorPlugin = function (_Phaser$Plugin) {
   }
 
   // enable :: (gameObject: Object)
+
 
   _createClass(BehaviorPlugin, [{
     key: 'enable',
