@@ -31,7 +31,7 @@ var sampleBehavior = {
   },
   
   destroy: function(object, options, game) {
-    // called when the behavior is REMOVED to a game object
+    // called when the behavior is REMOVED from a game object
   },
   
   preUpdate: function(object, options, game) {
@@ -68,7 +68,7 @@ myObject.behaviors.add('my awesome key', // a behavior instance key/identifier
 // remove a behavior (.destroy() is called)
 myObject.behaviors.remove('my awesome key')
 
-// add others behaviors... be criative!
+// add other behaviors... be creative!
 myObject.behaviors.add('fire ball', behaviorSpell, { damage: 300 })
 myObject.behaviors.add('frost nova', behaviorSpell, { damage: 100, slow: 0.4 })
 myObject.behaviors.add('invulnerability', behaviorImortal, { duration: 15 })
