@@ -1,5 +1,9 @@
 # PATCH NOTES
 
+## v0.1.2 - 25/03/2016
+
+- now 'options' can be used instead of 'opts' in behavior declaration 
+
 ## v0.1.1 - 01/28/2016
 
 - improved README
