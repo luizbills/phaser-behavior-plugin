@@ -28,7 +28,7 @@
 
 ```js
 // create a behavior
-var sampleBehavior = {
+var Behavior = {
 
   // settings of the behavior
   options: {
@@ -75,15 +75,17 @@ var myObject = game.create.sprite(0, 0, 'dummy')
 // add the behavior system to any object (not just sprites)
 behaviorPlugin.enable(myObject)
 
+
+// all behavior instances must have a identifier/key. This id just need to be unique.
+var key = 'my awesome key' 
+
+// You can to override the default options a behavior instance, if you want/need (optional)
+var customOptions = { key: 'another value' }
+
 // add a behavior
-var key = 'my awesome key' // a behavior instance key/identifier (just need be unique)
-var customOptions = { key: 'another value' } // if you need/want overrides the default options of the behavior (optional)
-myObject.behaviors.add(key, sampleBehavior, customOptions) // `.create` is called
+myObject.behaviors.set(key, Behavior, customOptions) // `.create` is called
 
-// remove a behavior
-myObject.behaviors.remove(key) // `.destroy` is called
-
-// checks a behavior instance
+// checks if a object has a behavior instance
 // returns true if the object has a behavior with the key
 myObject.behaviors.has(key)
 
@@ -91,12 +93,15 @@ myObject.behaviors.has(key)
 // returns the behavior instance if the object has a behavior with the key, otherwise `undefined`
 myObject.behaviors.get(key)
 
-// be creative!
+// remove a behavior instance corresponding to this key
+myObject.behaviors.remove(key) // `.destroy` is called if a behavior instance is removed
+
+// now be creative!
 // create other behaviors...
-myObject.behaviors.add('fire ball', behaviorSpell, { damage: 300 })
-myObject.behaviors.add('frost nova', behaviorSpell, { damage: 100, slow: 0.4 })
-myObject.behaviors.add('buff:invulnerability', behaviorImortal, { duration: 15 })
-myObject.behaviors.add('weapon:main-hand', behaviorWeapon, { type: 'sword', damage: 120 })
+myObject.behaviors.set('fire ball', behaviorSpell, { damage: 300 })
+myObject.behaviors.set('frost nova', behaviorSpell, { damage: 100, slow: 0.4 })
+myObject.behaviors.set('buff:invulnerability', behaviorImortal, { duration: 15 })
+myObject.behaviors.set('weapon:main-hand', behaviorWeapon, { type: 'sword', damage: 120 })
 ```
 
 [LIVE DEMO](http://codepen.io/luizbills/pen/MKGLqZ?editors=0010)
