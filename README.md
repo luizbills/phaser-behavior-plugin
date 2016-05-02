@@ -101,6 +101,16 @@ myObject.behaviors.add('weapon:main-hand', behaviorWeapon, { type: 'sword', dama
 
 [LIVE DEMO](http://codepen.io/luizbills/pen/MKGLqZ?editors=0010)
 
+## List of Behaviors
+
+Soon...
+
+<!--
+| Behavior | Description |
+|---|---|
+| [Bullet](#) | description here |
+-->
+
 ## License
 
 MIT
