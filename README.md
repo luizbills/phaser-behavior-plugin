@@ -35,29 +35,29 @@ var sampleBehavior = {
     key: 'value'
   },
 
-  create: function(object, options, game) {
+  create: function(object, options) {
     // called when the behavior is ADDED to a game object
   },
 
-  destroy: function(object, options, game) {
+  destroy: function(object, options) {
     // called when the behavior is REMOVED from a game object
   },
 
-  preUpdate: function(object, options, game) {
+  preUpdate: function(object, options) {
     // called at the very start of the update cycle,
     // before any other subsystems have been updated (including Physics)
   },
 
-  update: function(object, options, game) {
+  update: function(object, options) {
     // called after all the core subsystems (Input, Tweens, Sound, etc)
     // and the State have updated, but before the render
   },
 
-  render: function(object, options, game) {
+  render: function(object, options) {
     // called right after the Game Renderer completes, but before the State.render
   },
 
-  postRender: function(object, options, game) {
+  postRender: function(object, options) {
     // called after the Game Renderer and State.render have run
   }
 }
