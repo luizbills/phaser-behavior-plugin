@@ -10,7 +10,7 @@
 
 ### NPM
 
-via NPM: `npm install phaser-behavior-plugin --save`
+`npm install phaser-behavior-plugin --save`
 
 ### DIRECT DOWNLOAD
 
