@@ -77,24 +77,24 @@ behaviorPlugin.enable(myObject)
 
 
 // all behavior instances must have a identifier/key. This id just need to be unique.
-var key = 'my awesome key' 
+var id = 'my awesome key' 
 
 // You can to override the default options a behavior instance, if you want/need (optional)
 var customOptions = { key: 'another value' }
 
 // add a behavior
-myObject.behaviors.set(key, Behavior, customOptions) // `.create` is called
+myObject.behaviors.set(id, Behavior, customOptions) // `.create` is called
 
 // checks if a object has a behavior instance
 // returns true if the object has a behavior with the key
-myObject.behaviors.has(key)
+myObject.behaviors.has(id)
 
 // get a behavior instance
 // returns the behavior instance if the object has a behavior with the key, otherwise `undefined`
-myObject.behaviors.get(key)
+myObject.behaviors.get(id)
 
 // remove a behavior instance corresponding to this key
-myObject.behaviors.remove(key) // `.destroy` is called if a behavior instance is removed
+myObject.behaviors.remove(id) // `.destroy` is called if a behavior instance is removed
 
 // now be creative!
 // create other behaviors...
