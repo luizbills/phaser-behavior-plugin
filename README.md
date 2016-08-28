@@ -108,13 +108,10 @@ myObject.behaviors.set('weapon:main-hand', behaviorWeapon, { type: 'sword', dama
 
 ## List of Behaviors
 
-Soon...
 
-<!--
 | Behavior | Description |
 |---|---|
-| [Bullet](#) | description here |
--->
+| [Bullet](https://github.com/luizbills/phaser-behaviors/tree/master/bullet) | moves an game object forwards at an angle |
 
 ## License
 
