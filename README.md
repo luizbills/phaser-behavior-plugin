@@ -19,7 +19,7 @@
 ### CDN
 
 ```html
-<script scr="//npmcdn.com/phaser-behavior-plugin@latest/dist/phaser-behavior-plugin.js"></script>
+<script scr="//unpkg.com/phaser-behavior-plugin@latest/dist/phaser-behavior-plugin.js"></script>
 ```
 
 ## Usage
