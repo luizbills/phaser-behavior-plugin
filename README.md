@@ -19,7 +19,7 @@
 ### CDN
 
 ```html
-<script scr="//unpkg.com/phaser-behavior-plugin@latest/dist/phaser-behavior-plugin.js"></script>
+<script scr="//unpkg.com/phaser-behavior-plugin/dist/phaser-behavior-plugin.js"></script>
 ```
 
 ## Usage
@@ -77,7 +77,7 @@ behaviorPlugin.enable(myObject)
 
 
 // all behavior instances must have a identifier/key. This id just need to be unique.
-var id = 'my awesome key' 
+var id = 'my awesome key'
 
 // You can to override the default options a behavior instance, if you want/need (optional)
 var customOptions = { key: 'another value' }
