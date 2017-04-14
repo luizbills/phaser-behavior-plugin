@@ -1,6 +1,6 @@
 {
   "name": "phaser-behavior-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Behavior System wrapper for Phaser games",
   "main": "lib/wrapper.js",
   "author": "Luiz Bills",
