@@ -28,7 +28,7 @@
     "uglify-js": "^2.7.5"
   },
   "dependencies": {
-    "behavior-system": "^1.0.2"
+    "behavior-system": "1.0.2"
   },
   "keywords": [
     "behavior",
