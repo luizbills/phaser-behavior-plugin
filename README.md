@@ -12,14 +12,14 @@
 
 `npm install phaser-behavior-plugin --save`
 
-### DIRECT DOWNLOAD
+### DOWNLOAD
 
 [Download Here](https://github.com/luizbills/phaser-behavior-plugin/tree/master/dist)
 
 ### CDN
 
 ```html
-<script scr="//unpkg.com/phaser-behavior-plugin/dist/phaser-behavior-plugin.js"></script>
+<script scr="//unpkg.com/phaser-behavior-plugin@latest/dist/phaser-behavior-plugin.js"></script>
 ```
 
 ## Usage
