@@ -1,6 +1,11 @@
 var app = {} // just a namespace
 
 app.game = new Phaser.Game(400, 400, Phaser.AUTO, '', {
+  preload: function () {
+    this.load.crossOrigin = "Anonymous";
+    this.load.image('actor', '../assets/square.png');
+  },
+
   create: function() {
     app.behaviorPlugin = app.game.plugins.add(Phaser.Plugin.Behavior)
 
