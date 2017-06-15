@@ -7,12 +7,16 @@ app.game = new Phaser.Game(400, 400, Phaser.AUTO, '', {
   },
 
   create: function() {
+    // initialize the plugin
     app.behaviorPlugin = app.game.plugins.add(Phaser.Plugin.Behavior)
 
+    // setup a sprite
     app.actor = app.game.add.sprite(0, 0, 'actor')
     app.actor.anchor.set(0.5)
 
+    // enable the plugin on our sprite
     var enabled = app.behaviorPlugin.enable(app.actor)
+    
     if (enabled === true) {
       app.actor.behaviors.set('mov', app.BehaviorBullet, {
         angle: Math.PI / 4, // 45 degrees
