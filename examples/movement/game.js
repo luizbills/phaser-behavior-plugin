@@ -1,5 +1,9 @@
 var app = {} // just a namespace
 
+// globally plugin accesses
+console.log(window.Phaser.Plugin.Behavior)
+console.log(window.BehaviorPlugin)
+
 app.game = new Phaser.Game(400, 400, Phaser.AUTO, '', {
   preload: function () {
     this.load.crossOrigin = "Anonymous";
@@ -27,6 +31,9 @@ app.game = new Phaser.Game(400, 400, Phaser.AUTO, '', {
   },
 
   update: function () {
+    // pause/resume is only avaliable in version 1.1.0 ou above
+    if (Phaser.Plugin.Behavior.VERSION.substr(0,3) < 1.1) return
+
     if (this.game.input.activePointer.isDown) {
       if ( !app.actor.behaviors.isPaused('mov') ) app.actor.behaviors.pause('mov')
     } else {
