@@ -113,7 +113,7 @@ myObject.behaviors.set('weapon:main-hand', behaviorWeapon, { type: 'sword', dama
 |---|---|
 | [Bullet](https://github.com/luizbills/phaser-behaviors/tree/master/bullet) | moves an game object forwards at an angle |
 | [Collision Handler](https://github.com/luizbills/phaser-behaviors/tree/master/collision-handler) | handles collisions | 
-
+| [Platformer](https://github.com/luizbills/phaser-behaviors/tree/master/platformer) | Implements the *platform games* style movement |
 ## License
 
 MIT
