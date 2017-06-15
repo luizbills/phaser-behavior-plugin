@@ -1,6 +1,6 @@
 {
   "name": "phaser-behavior-plugin",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Behavior System wrapper for Phaser games",
   "main": "lib/wrapper.js",
   "author": "Luiz Bills",
@@ -21,14 +21,14 @@
     "prepublish": "npm run dist"
   },
   "devDependencies": {
-    "browserify": "^13.1.1",
-    "es2040": "^1.2.4",
-    "http-server": "^0.9.0",
-    "standard": "^8.6.0",
-    "uglify-js": "^2.7.5"
+    "browserify": "^14.4.0",
+    "es2040": "^1.2.5",
+    "http-server": "^0.10.0",
+    "standard": "^10.0.2",
+    "uglify-js": "^3.0.17"
   },
   "dependencies": {
-    "behavior-system": "1.0.2"
+    "behavior-system": "^1.1.0"
   },
   "keywords": [
     "behavior",
