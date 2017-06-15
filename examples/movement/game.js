@@ -20,12 +20,19 @@ app.game = new Phaser.Game(400, 400, Phaser.AUTO, '', {
         rotate: true
       })
     }
+  },
+
+  update: function () {
+    if (this.game.input.activePointer.isDown) {
+      if ( !app.actor.behaviors.isPaused('mov') ) app.actor.behaviors.pause('mov')
+    } else {
+      if ( app.actor.behaviors.isPaused('mov') ) app.actor.behaviors.resume('mov')
+    }
   }
 })
 
 // the behavior
 app.BehaviorBullet = {
-
   // defaults settings
   options: {
     angle: 0,
